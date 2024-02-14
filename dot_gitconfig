@@ -1,4 +1,9 @@
 [user]
 	email = kobylanski.przemyslaw@gmail.com
+	name = Przemysław Kobylański
 [push]
 	autoSetupRemote = true
+[status]
+	short = true
+[fetch]
+	prune = true
