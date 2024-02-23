@@ -1,6 +1,8 @@
 [user]
 	email = kobylanski.przemyslaw@gmail.com
 	name = Przemysław Kobylański
+[pull]
+	rebase = true
 [push]
 	autoSetupRemote = true
 [status]
