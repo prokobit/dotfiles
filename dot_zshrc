@@ -112,3 +112,4 @@ complete -o nospace -C $HOME/bin/terraform terraform
 alias ws="cd ~/workspace"
 alias docker="podman"
 
+neofetch
