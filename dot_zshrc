@@ -113,3 +113,4 @@ alias ws="cd ~/workspace"
 alias docker="podman"
 
 neofetch
+alias vim="nvim"
