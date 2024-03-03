@@ -9,3 +9,5 @@
 	short = true
 [fetch]
 	prune = true
+[core]
+	editor = nvim
