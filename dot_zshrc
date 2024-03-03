@@ -110,7 +110,5 @@ complete -o nospace -C $HOME/bin/terraform terraform
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ws="cd ~/workspace"
-alias docker="podman"
-
-neofetch
 alias vim="nvim"
+neofetch
