@@ -112,4 +112,3 @@ complete -o nospace -C $HOME/bin/terraform terraform
 alias ws="cd ~/workspace"
 alias vim="nvim"
 alias s="kitten ssh"
-neofetch
