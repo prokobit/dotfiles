@@ -111,4 +111,6 @@ complete -o nospace -C $HOME/bin/terraform terraform
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ws="cd ~/workspace"
 alias vim="nvim"
+alias cat="bat"
+alias ls="eza"
 alias s="kitten ssh"
