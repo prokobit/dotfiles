@@ -12,7 +12,7 @@
     refreshPeriod = "168h"
 [".config/nvim"]
     type = "git-repo"
-    url = "https://github.com/AstroNvim/AstroNvim"
+    url = "https://github.com/AstroNvim/template"
     refreshPeriod = "168h"
     [".config/nvim".pull]
         args = ["--depth=1"]
