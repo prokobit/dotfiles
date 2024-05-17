@@ -16,4 +16,10 @@
     refreshPeriod = "168h"
     [".config/nvim".pull]
         args = ["--depth=1"]
+[".tmux/plugins/tpm"]
+    type = "git-repo"
+    url = "https://github.com/tmux-plugins/tpm"
+    refreshPeriod = "168h"
+    [".tmux/plugins/tpm".pull]
+        args = ["--depth=1"]
 
