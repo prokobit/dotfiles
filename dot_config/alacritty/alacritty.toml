@@ -11,7 +11,7 @@ style = "Regular"
 [window]
 decorations = "none"
 opacity = 0.95
-blur = true
+#blur = true
 startup_mode = "Maximized"
 
 [window.padding]
