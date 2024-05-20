@@ -10,7 +10,9 @@ plug "zap-zsh/supercharge"
 plug "zap-zsh/zap-prompt"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "$HOME/.oh-my-zsh/plugins/git/git.plugin.zsh"
+plug "$HOME/.oh-my-zsh/plugins/tmu/tmux.plugin.zsh"
 
+ZSH_TMUX_AUTOSTART=true
 # Load and initialise completion system
 autoload -Uz compinit && compinit
 # complete -o nospace -C $HOME/bin/terraform terraform
