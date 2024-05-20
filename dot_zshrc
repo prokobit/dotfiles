@@ -111,3 +111,6 @@ alias ws="cd ~/workspace"
 #alias vim="nvim"
 alias cat="bat"
 alias ls="eza"
+
+eval "$(starship init zsh)"
+
