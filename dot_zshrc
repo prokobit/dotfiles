@@ -11,6 +11,7 @@ plug "zap-zsh/zap-prompt"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "zsh-users/zsh-history-substring-search"
 plug "zap-zsh/fzf"
+plug "chrishrb/zsh-kubectl"
 plug "$HOME/.config/zsh/plugins/git/git.plugin.zsh"
 plug "$HOME/.config/zsh/plugins/tmux/tmux.plugin.zsh"
 
