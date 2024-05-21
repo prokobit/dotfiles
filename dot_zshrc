@@ -31,7 +31,7 @@ alias ws="cd ~/workspace"
 alias vim="nvim"
 alias cat="bat"
 alias ls="eza"
-alias ll="ls -all"
+alias ll="ls -al"
 
 # Load Starship
 eval "$(starship init zsh)"
