@@ -1,7 +1,8 @@
 # If you come from bash you might have to change your $PATH.
+export EDITOR="nvim"
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$HOME/bin:$HOME/.local/bin:/usr/local/opt/curl/bin:/usr/local/bin:/usr/local/go/bin:$PATH
-export EDITOR="nvim"
+export ZSH=$HOME/.config/zsh
 
 # Created by Zap installer
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
@@ -12,20 +13,23 @@ plug "zsh-users/zsh-syntax-highlighting"
 plug "zsh-users/zsh-history-substring-search"
 plug "zap-zsh/fzf"
 plug "chrishrb/zsh-kubectl"
-plug "$HOME/.config/zsh/plugins/git/git.plugin.zsh"
-plug "$HOME/.config/zsh/plugins/tmux/tmux.plugin.zsh"
+plug "$ZSH/plugins/git/git.plugin.zsh"
+plug "$ZSH/plugins/tmux/tmux.plugin.zsh"
 
 # Load and initialise completion system
 autoload -Uz compinit && compinit
+
 # complete -o nospace -C $HOME/bin/terraform terraform
 
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
+# Aliases
 alias ws="cd ~/workspace"
 alias vim="nvim"
 alias cat="bat"
 alias ls="eza"
 alias ll="ls -all"
 
+# Load Starship
 eval "$(starship init zsh)"
