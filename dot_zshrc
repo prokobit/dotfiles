@@ -13,12 +13,14 @@ plug "zsh-users/zsh-syntax-highlighting"
 plug "zsh-users/zsh-history-substring-search"
 plug "zap-zsh/fzf"
 plug "chrishrb/zsh-kubectl"
+plug "agkozak/zsh-z"
 plug "$ZSH/plugins/git/git.plugin.zsh"
 plug "$ZSH/plugins/tmux/tmux.plugin.zsh"
 
 # Load and initialise completion system
 autoload -Uz compinit && compinit
 
+zstyle ':completion:*' menu select
 # complete -o nospace -C $HOME/bin/terraform terraform
 
 bindkey '^[[A' history-substring-search-up
