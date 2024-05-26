@@ -35,6 +35,7 @@ alias vim="nvim"
 alias cat="bat"
 alias ls="eza"
 alias ll="ls -al"
+alias lg="lazygit"
 
 # Load Starship
 eval "$(starship init zsh)"
