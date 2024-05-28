@@ -7,7 +7,6 @@ export NVM_DIR="$HOME/.nvm"
 export PATH=$HOME/.tmux/plugins/tmuxifier/bin:$NVM_DIR:$GOPATH/bin:$HOME/bin:$HOME/.local/bin:/usr/local/opt/curl/bin:/usr/local/bin:/usr/local/go/bin:$PATH
 export ZSH=$HOME/.config/zsh
 
-eval "$(tmuxifier init -)"
 
 # Created by Zap installer
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
@@ -40,4 +39,5 @@ alias ll="ls -al"
 alias lg="lazygit"
 
 # Load Starship
+eval "$(tmuxifier init -)"
 eval "$(starship init zsh)"
