@@ -37,7 +37,7 @@ alias cat="bat"
 alias ls="eza"
 alias ll="ls -al"
 alias lg="lazygit"
-alias tif="tmuxifire"
+alias ti="tmuxifire"
 
 # Load Starship
 eval "$(tmuxifier init -)"
