@@ -8,6 +8,7 @@ export PATH=$HOME/.tmux/plugins/tmuxifier/bin:$NVM_DIR:$GOPATH/bin:$HOME/bin:$HO
 export ZSH=$HOME/.config/zsh
 
 ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOQUIT=false
 
 # Created by Zap installer
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
