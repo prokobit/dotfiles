@@ -10,9 +10,11 @@ return {
     "williamboman/mason-lspconfig.nvim",
     lazy = false,
     opts = {
+      ensure_installed = { "lua_ls", "jdtls", "tsserver", "gopls" },
       auto_install = true,
     },
   },
+  {"mfussenegger/nvim-jdtls"},
   {
     "neovim/nvim-lspconfig",
     lazy = false,
@@ -23,13 +25,13 @@ return {
       lspconfig.tsserver.setup({
         capabilities = capabilities
       })
-      lspconfig.solargraph.setup({
-        capabilities = capabilities
-      })
-      lspconfig.html.setup({
-        capabilities = capabilities
-      })
       lspconfig.lua_ls.setup({
+        capabilities = capabilities
+      })
+      lspconfig.gopls.setup({
+        capabilities = capabilities
+      })
+      lspconfig.jdtls.setup({
         capabilities = capabilities
       })
 
