@@ -6,7 +6,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 export PATH=$HOME/.tmux/plugins/tmuxifier/bin:$NVM_DIR:$GOPATH/bin:$HOME/bin:$HOME/.local/bin:/usr/local/opt/curl/bin:/usr/local/bin:/usr/local/go/bin:$PATH
 export ZSH=$HOME/.config/zsh
-
+export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/nvim/mason/packages/jdtls/lombok.jar"
 ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOQUIT=false
 
