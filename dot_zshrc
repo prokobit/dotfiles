@@ -44,7 +44,7 @@ alias ls="eza"
 alias ll="ls -al"
 alias lg="lazygit"
 alias ti="tmuxifire"
-alias nvimdiff='nvim -dR'
+alias nvimdiff='nvim -d'
 
 # Load Starship
 eval "$(tmuxifier init -)"
