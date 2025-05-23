@@ -5,8 +5,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 export PATH=$HOME/.tmux/plugins/tmuxifier/bin:$NVM_DIR:$HOME/bin:$HOME/.local/bin:/usr/local/opt/curl/bin:/usr/local/bin:/usr/local/go/bin:$PATH
 export ZSH=$HOME/.config/zsh
-export LS_COLORS="$(vivid generate catppuccin-mocha)"
-export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/nvim/mason/packages/jdtls/lombok.jar"
 ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOQUIT=false
 
@@ -24,6 +22,9 @@ plug "wintermi/zsh-golang"
 plug "wintermi/zsh-mise"
 plug "$ZSH/plugins/git/git.plugin.zsh"
 plug "$ZSH/plugins/tmux/tmux.plugin.zsh"
+
+export LS_COLORS="$(vivid generate catppuccin-mocha)"
+export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/nvim/mason/packages/jdtls/lombok.jar"
 
 # Load and initialise completion system
 autoload bashcompinit && bashcompinit
