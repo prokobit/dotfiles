@@ -1,6 +1,6 @@
 #! /bin/bash
 dnf copr enable atim/lazygit -y
-dnf install vim nvim zsh eza bat fzf lazygit tmux pipx libheif-freeworld
+dnf install vim nvim zsh eza bat fzf lazygit tmux pipx uv libheif-freeworld
 
 sh -s $(which zsh)
 zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
