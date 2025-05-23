@@ -10,7 +10,7 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:prokobit/dot
 mkdir -p "$(bat --config-dir)/themes"
 wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Mocha.tmTheme
 bat cache --build
-
+curl https://mise.run | sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 mkdir -p "$HOME/workspace"
