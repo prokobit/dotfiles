@@ -21,6 +21,8 @@ plug "zsh-users/zsh-history-substring-search"
 plug "zap-zsh/fzf"
 plug "chrishrb/zsh-kubectl"
 plug "agkozak/zsh-z"
+plug "wintermi/zsh-golang"
+plug "wintermi/zsh-mise"
 plug "$ZSH/plugins/git/git.plugin.zsh"
 plug "$ZSH/plugins/tmux/tmux.plugin.zsh"
 
@@ -46,6 +48,5 @@ alias lg="lazygit"
 alias ti="tmuxifire"
 
 # Load
-eval "$(mise activate zsh)"
 eval "$(tmuxifier init -)"
 eval "$(starship init zsh)"
