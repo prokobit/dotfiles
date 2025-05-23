@@ -1,3 +1,4 @@
 [tools]
 rust = { version = "1.83.0", profile = "minimal" }
 k9s = 'v0.50.6'
+vivid = 'v0.10.1'
