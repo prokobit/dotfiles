@@ -1,4 +1,5 @@
 [tools]
+usage = '2.1.1'
 rust = { version = "1.87.0", profile = "minimal" }
 "cargo:rage" = '0.11.1'
 kubectl = 'v1.33.1'
