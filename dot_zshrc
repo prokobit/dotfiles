@@ -45,6 +45,7 @@ alias ll="ls -al"
 alias lg="lazygit"
 alias ti="tmuxifire"
 
-# Load Starship
+# Load
+eval "$(mise activate zsh)"
 eval "$(tmuxifier init -)"
 eval "$(starship init zsh)"
