@@ -3,7 +3,7 @@ export EDITOR="nvim"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-export PATH=$HOME/.tmux/plugins/tmuxifier/bin:$NVM_DIR:$HOME/bin:$HOME/.local/bin:/usr/local/opt/curl/bin:/usr/local/bin:/usr/local/go/bin:$PATH
+export PATH=$HOME/.tmux/plugins/tmuxifier/bin:$NVM_DIR:$HOME/bin:$HOME/.local/bin:/usr/local/bin:/usr/local/go/bin:$PATH
 export ZSH=$HOME/.config/zsh
 ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOQUIT=false
