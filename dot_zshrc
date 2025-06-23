@@ -19,7 +19,7 @@ plug "zap-zsh/fzf"
 plug "chrishrb/zsh-kubectl"
 plug "agkozak/zsh-z"
 plug "wintermi/zsh-golang"
-plug "wintermi/zsh-mise"
+#plug "wintermi/zsh-mise"
 plug "$ZSH/plugins/git/git.plugin.zsh"
 plug "$ZSH/plugins/tmux/tmux.plugin.zsh"
 
@@ -50,3 +50,4 @@ alias ti="tmuxifire"
 # Load
 eval "$(tmuxifier init -)"
 eval "$(starship init zsh)"
+eval "$(mise activate zsh)"
