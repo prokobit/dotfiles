@@ -1,17 +1,17 @@
 [tools]
 #{{ if eq .chezmoi.osRelease.id "ubuntu" }}
-neovim  = '0.11.2'
+"aqua:neovim/neovim"  = '0.11.2'
 #{{ end }}
-go = '1.24.4'
-usage = '2.1.1'
+"aqua:derailed/k9s" = '0.50.5'
+"ubi:jdx/usage" = '2.1.1'
+"ubi:sharkdp/vivid" = 'v0.10.1'
 rust = { version = "1.87.0", profile = "minimal" }
 "cargo:rage" = '0.11.1'
+go = '1.24.4'
 kubectl = '1.33.2'
-kubeseal = '0.29.0'
+"aqua:bitnami-labs/sealed-secrets" = '0.29.0'
 helm = '3.18.3'
-"aqua:derailed/k9s" = '0.50.5'
-vivid = 'v0.10.1'
-tfswitch = '1.4.5'
 tflint = '0.58.0'
-ansible = '11.6.0'
-lazygit = '0.51.1'
+"ubi:warrensbox/terraform-switcher" = '1.4.5'
+"aqua:jesseduffield/lazygit" = '0.51.1'
+"pipx:ansible" = '11.6.0'
