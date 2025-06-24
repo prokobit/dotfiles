@@ -8,3 +8,4 @@
     "/(^|/)\\.?mise/config\\.toml$/",
     "/(^|/)\\.?mise/config\\.toml\\.tmpl$/"
   ]
+}
