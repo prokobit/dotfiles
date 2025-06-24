@@ -1,4 +1,7 @@
 [tools]
+{{ if (.chezmoi.kernel.osrelease | lower | contains "ubuntu") }}
+neovim  = '0.11.2'
+{{ end }}
 go = '1.24.4'
 usage = '2.1.1'
 rust = { version = "1.87.0", profile = "minimal" }
@@ -12,6 +15,3 @@ tfswitch = '1.4.5'
 tflint = '0.58.0'
 ansible = '11.6.0'
 lazygit = '0.51.1'
-{{ if (.chezmoi.kernel.osrelease | lower | contains "ubuntu") }}
-neovim  = '0.11.2'
-{{ end }}
