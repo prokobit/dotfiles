@@ -3,9 +3,11 @@
   "extends": [
     "config:recommended"
   ],
-  "managerFilePatterns": [
-    "/(^|/)\\.?mise\\.toml$/",
-    "/(^|/)\\.?mise/config\\.toml$/",
-    "/(^|/)\\.?mise/config\\.toml\\.tmpl$/"
-  ],
+  "mise": {
+    "managerFilePatterns": [
+      "/(^|/)\\.?mise\\.toml$/",
+      "/(^|/)\\.?mise/config\\.toml$/",
+      "/(^|/)\\.?mise/config\\.toml\\.tmpl$/"
+    ]
+  },
 }
