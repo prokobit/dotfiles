@@ -12,6 +12,6 @@ tfswitch = '1.4.5'
 tflint = '0.58.0'
 ansible = '11.6.0'
 lazygit = '0.51.1'
-{{ if eq .chezmoi.osRelease.id "ubuntu" }}
+#{{ if eq .chezmoi.osRelease.id "ubuntu" }}
 neovim  = '0.11.2'
-{{ end }}
+#{{ end }}
