@@ -1,5 +1,5 @@
 [tools]
-{{ if (.chezmoi.kernel.osrelease | lower | contains "ubuntu") }}
+{{ if eq .chezmoi.osRelease.id "ubuntu" }}
 neovim  = '0.11.2'
 {{ end }}
 go = '1.24.4'
