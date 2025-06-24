@@ -7,5 +7,5 @@
     "/(^|/)\\.?mise\\.toml$/",
     "/(^|/)\\.?mise/config\\.toml$/",
     "/(^|/)\\.?mise/config\\.toml\\.tmpl$/"
-  ]
+  ],
 }
