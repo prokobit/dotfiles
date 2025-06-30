@@ -15,13 +15,15 @@ plug "zap-zsh/supercharge"
 plug "zap-zsh/zap-prompt"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "zsh-users/zsh-history-substring-search"
-plug "zap-zsh/fzf"
+#plug "zap-zsh/fzf"
 plug "chrishrb/zsh-kubectl"
 plug "agkozak/zsh-z"
 plug "wintermi/zsh-golang"
 plug "wintermi/zsh-mise"
 plug "$ZSH/plugins/git/git.plugin.zsh"
 plug "$ZSH/plugins/tmux/tmux.plugin.zsh"
+
+source <(fzf --zsh)
 
 export LS_COLORS="$(vivid generate catppuccin-mocha)"
 export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/nvim/mason/packages/jdtls/lombok.jar"
