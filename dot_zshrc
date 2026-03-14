@@ -35,7 +35,7 @@ zstyle ':completion:*' menu select
 complete -C '/usr/local/bin/aws_completer' aws
 # complete -o nospace -C $HOME/bin/terraform terraform
 
-bindkey -e
+bindkey '^R' history-incremental-search-backward
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
