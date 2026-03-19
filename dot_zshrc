@@ -46,6 +46,7 @@ alias ws="cd ~/workspace"
 alias ls="eza"
 alias ll="ls -al"
 alias lg="lazygit"
+alias ff="fastfetch"
 alias ti="tmuxifire"
 
 # Load
