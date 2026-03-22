@@ -52,5 +52,5 @@ alias ff="fastfetch"
 alias ti="tmuxifire"
 
 # Load
-eval "$(tmuxifier init -)"
+# eval "$(tmuxifier init -)"
 eval "$(starship init zsh)"
