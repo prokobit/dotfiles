@@ -22,7 +22,7 @@ plug "wintermi/zsh-mise"
 plug "$ZSH/plugins/git/git.plugin.zsh"
 plug "$ZSH/plugins/ansible/ansible.plugin.zsh"
 plug "$ZSH/plugins/terraform/terraform.plugin.zsh"
-plug "$ZSH/plugins/tmux/tmux.plugin.zsh"
+# plug "$ZSH/plugins/tmux/tmux.plugin.zsh"
 
 source <(fzf --zsh)
 
