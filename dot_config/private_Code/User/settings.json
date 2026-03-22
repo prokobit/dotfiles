@@ -1,0 +1,10 @@
+{
+    "window.titleBarStyle": "custom",
+    "files.autoSave": "afterDelay",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace,'FiraCode Nerd Font'",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "workbench.iconTheme": "catppuccin-mocha",
+    "workbench.colorTheme": "Catppuccin Mocha",
+}
