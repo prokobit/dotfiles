@@ -51,6 +51,30 @@ alias lg="lazygit"
 alias ff="fastfetch"
 alias ti="tmuxifire"
 
+#
+bwsops() (
+  case "$1" in
+    edit|decrypt) ;;
+    *) exec sops "$@" ;;
+  esac
+
+  local session key
+  session=$(bw unlock --raw) || return 1
+  trap 'BW_SESSION=$session bw lock >/dev/null 2>&1' EXIT
+
+  key=$(BW_SESSION=$session bw get notes sops-age-key)
+  if [ -z "$key" ]; then
+    echo "bwsops: can not get sops-age-key" >&2
+    return 1
+  fi
+
+  BW_SESSION=$session bw lock >/dev/null
+  unset session
+  trap - EXIT
+
+  SOPS_AGE_KEY=$key sops "$@"
+)
+
 # Load
 eval "$(tmuxifier init -)"
 eval "$(starship init zsh)"
