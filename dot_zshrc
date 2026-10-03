@@ -5,8 +5,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 export PATH=$HOME/.tmux/plugins/tmuxifier/bin:$NVM_DIR:$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 export ZSH=$HOME/.config/zsh
-ZSH_TMUX_AUTOSTART=true
-ZSH_TMUX_AUTOQUIT=false
+#ZSH_TMUX_AUTOSTART=true
+#ZSH_TMUX_AUTOQUIT=false
 
 # Created by Zap installer
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
