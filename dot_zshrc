@@ -76,5 +76,5 @@ bwsops() (
 )
 
 # Load
-#eval "$(tmuxifier init -)"
+# eval "$(tmuxifier init -)"
 eval "$(starship init zsh)"
