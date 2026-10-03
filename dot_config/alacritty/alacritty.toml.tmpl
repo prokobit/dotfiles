@@ -8,6 +8,7 @@ TERM = "xterm-256color"
 
 [terminal.shell]
 program = "zsh"
+args = ["-i", "-c", "herdr; exec zsh -i"]
 
 [font]
 {{ if eq .chezmoi.os "darwin" }}
