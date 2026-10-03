@@ -1,4 +1,4 @@
-i# If you come from bash you might have to change your $PATH.
+# If you come from bash you might have to change your $PATH.
 export EDITOR="nvim"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
