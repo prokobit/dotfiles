@@ -3,6 +3,7 @@ export EDITOR="nvim"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+export SOPS_AGE_KEY_FILE=$HOME/.config/sops/age/keys.txt
 export PATH=$HOME/.tmux/plugins/tmuxifier/bin:$NVM_DIR:$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 export ZSH=$HOME/.config/zsh
 #ZSH_TMUX_AUTOSTART=true
@@ -49,31 +50,7 @@ alias ls="eza"
 alias ll="ls -al"
 alias lg="lazygit"
 alias ff="fastfetch"
-alias ti="tmuxifire"
-
-#
-bwsops() (
-  case "$1" in
-    edit|decrypt) ;;
-    *) exec sops "$@" ;;
-  esac
-
-  local session key
-  session=$(bw unlock --raw) || return 1
-  trap 'BW_SESSION=$session bw lock >/dev/null 2>&1' EXIT
-
-  key=$(BW_SESSION=$session bw get notes sops-age-key)
-  if [ -z "$key" ]; then
-    echo "bwsops: can not get sops-age-key" >&2
-    return 1
-  fi
-
-  BW_SESSION=$session bw lock >/dev/null
-  unset session
-  trap - EXIT
-
-  SOPS_AGE_KEY=$key sops "$@"
-)
+#alias ti="tmuxifire"
 
 # Load
 # eval "$(tmuxifier init -)"
