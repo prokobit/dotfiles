@@ -1,2 +1,2 @@
 # public key: age1chyfgcpwxewqk3ttkws7fj9t79u7f3qg8sfdm3hgj3lcw826692s37ke4f
-{{ (bitwardenSecrets "3bc093e5-a2d8-48f5-9b58-b4d101511152").value }}
+{{ (bitwarden "item" "3bc093e5-a2d8-48f5-9b58-b4d101511152").notes }}
