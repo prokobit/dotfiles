@@ -1,2 +1,2 @@
 # public key: age1chyfgcpwxewqk3ttkws7fj9t79u7f3qg8sfdm3hgj3lcw826692s37ke4f
-{{ (bitwarden "notes" "sops-age-key").notes }}
+{{ (bitwarden "notes" "sops-age-key") }}
