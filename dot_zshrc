@@ -27,6 +27,7 @@ plug "$ZSH/plugins/terraform/terraform.plugin.zsh"
 # plug "$ZSH/plugins/tmux/tmux.plugin.zsh"
 
 source <(fzf --zsh)
+eval "$(bw completion --shell zsh); compdef _bw bw;"
 
 export LS_COLORS="$(vivid generate catppuccin-mocha)"
 export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/nvim/mason/packages/jdtls/lombok.jar"
@@ -38,7 +39,6 @@ autoload -Uz bashcompinit && bashcompinit
 #zstyle ':completion:*' menu select
 zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
 source <(carapace _carapace)
-source <(bw completion --shell zsh)
 #complete -C '/usr/local/bin/aws_completer' aws
 # complete -o nospace -C $HOME/bin/terraform terraform
 
